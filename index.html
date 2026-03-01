@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Retrô do YouTube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="room">
+        <div class="tv-set">
+            <!-- Antenna -->
+            <div class="antenna">
+                <div class="rod left"></div>
+                <div class="rod right"></div>
+            </div>
+            
+            <div class="tv-cabinet">
+                <!-- Screen Area -->
+                <div class="screen-frame">
+                    <div class="screen-glass">
+                        <div class="crt-overlay"></div>
+                        <div class="noise-layer"></div>
+                        <div id="player-container">
+                            <div id="youtube-player"></div>
+                        </div>
+                        <div class="channel-display" id="channel-display">CH 01</div>
+                    </div>
+                </div>
+
+                <!-- Control Panel -->
+                <div class="control-panel">
+                    <div class="speaker-grill">
+                        <div class="hole"></div><div class="hole"></div><div class="hole"></div>
+                        <div class="hole"></div><div class="hole"></div><div class="hole"></div>
+                        <div class="hole"></div><div class="hole"></div><div class="hole"></div>
+                    </div>
+                    
+                    <div class="controls">
+                        <!-- Power Dial -->
+                        <div class="knob-container">
+                            <button class="knob power-btn" id="power-btn" aria-label="Ligar/Desligar">
+                                <span class="indicator"></span>
+                            </button>
+                            <span class="label">POWER</span>
+                        </div>
+
+                        <!-- Channel Dial -->
+                        <div class="knob-container">
+                            <div class="channel-buttons">
+                                <button class="ch-btn" id="ch-up" aria-label="Canal Acima">▲</button>
+                                <button class="ch-btn" id="ch-down" aria-label="Canal Abaixo">▼</button>
+                            </div>
+                            <span class="label">CANAL</span>
+                        </div>
+
+                        <!-- Volume Dial -->
+                        <div class="knob-container">
+                            <div class="vol-buttons">
+                                <button class="vol-btn" id="vol-up" aria-label="Aumentar Volume">+</button>
+                                <button class="vol-btn" id="vol-down" aria-label="Diminuir Volume">-</button>
+                            </div>
+                            <span class="label">VOLUME</span>
+                        </div>
+
+                        <!-- Play/Pause Buttons -->
+                        <div class="action-buttons">
+                            <button class="action-btn" id="play-btn">PLAY</button>
+                            <button class="action-btn" id="pause-btn">STOP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tv-stand"></div>
+        </div>
+        
+        <footer class="credits">
+            Desenvolvido por Pedro Correia
+        </footer>
+    </main>
+
+    <!-- YouTube IFrame API Script Loaded in JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
