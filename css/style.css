@@ -367,6 +367,7 @@ body {
 /* Footer Credits */
 .credits {
     margin-top: 50px;
+    margin-bottom: 30px;
     font-family: 'VT323', monospace;
     font-size: 1.5rem;
     color: #fff;
@@ -375,4 +376,127 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     letter-spacing: 2px;
+    text-align: center;
+}
+
+/* =========================================
+   RESPONSIVIDADE (Tablets e Celulares)
+   ========================================= */
+
+/* Tablets / Telas Médias */
+@media (max-width: 900px) {
+    .tv-cabinet {
+        width: 90vw;
+        max-width: 800px;
+        height: auto;
+        min-height: 450px;
+        padding: 15px;
+        border-width: 10px;
+    }
+    
+    .tv-stand {
+        width: 70vw;
+        max-width: 600px;
+    }
+    
+    .screen-frame {
+        padding: 15px;
+        min-height: 350px;
+    }
+    
+    .control-panel {
+        margin-left: 15px;
+    }
+    
+    .knob { width: 50px; height: 50px; }
+    .power-btn { width: 60px; height: 60px; }
+    .ch-btn, .vol-btn { width: 45px; height: 35px; }
+}
+
+/* Celulares / Telas Pequenas */
+@media (max-width: 600px) {
+    .tv-cabinet {
+        flex-direction: column;
+        width: 95vw;
+        height: auto;
+        border-radius: 15px;
+    }
+    
+    .screen-frame {
+        flex: none;
+        width: 100%;
+        box-sizing: border-box;
+        aspect-ratio: 4 / 3;
+        min-height: auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .screen-glass {
+        border-width: 5px;
+        border-radius: 20px;
+    }
+    
+    .channel-display {
+        font-size: 1.5rem;
+        top: 10px;
+        right: 15px;
+    }
+    
+    .control-panel {
+        flex: none;
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .speaker-grill {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .speaker-grill .hole {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .knob-container {
+        flex: 1 1 30%;
+        min-width: 80px;
+    }
+    
+    .channel-buttons, .vol-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .action-buttons {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .antenna {
+        height: 60px;
+    }
+    
+    .rod {
+        height: 100px;
+    }
+    
+    .tv-stand {
+        width: 80vw;
+    }
 }
